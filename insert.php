@@ -20,7 +20,7 @@ if (isset($_GET['temp'])) {
  
     // Connecting to database 
     $db = new DB_CONNECT();
-    $con=mysqli_connect("18.217.222.254","admin_spectrum","spectrumcet@mysql","admin_default") or die(mysqli_error($con));
+    $con=mysqli_connect("localhost","admin","password","admin_default") or die(mysqli_error($con));
 
  
     // Fire SQL query to insert data in weather

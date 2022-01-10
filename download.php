@@ -1,6 +1,6 @@
 <?php
  
-    $con=mysqli_connect("18.217.222.254","admin_spectrum","spectrumcet@mysql","admin_default") or die(mysqli_error($con));
+    $con=mysqli_connect("localhost","admin","password","admin_default") or die(mysqli_error($con));
 
     $filename = "data2";  //your_file_name
     $file_ending = "xls";   //file_extention

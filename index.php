@@ -10,7 +10,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <meta name="Vikkey" content="Vivek Gupta & IoTMonk"> -->
-    <meta name="author" content="Soumya Spectrum CET" />
+    <meta name="author" content="Fever Detection System" />
     <meta http-equiv="Access-Control-Allow-Origin" content="*" />
     <!-- <meta http-equiv="refresh" content="10"> -->
 
@@ -95,9 +95,9 @@
     height: 30px;" >
        <?php
        
-     $servername ="18.217.222.254";
-                  $username = "admin_spectrum";
-                  $password= "spectrumcet@mysql";
+     $servername ="localhost";
+                  $username = "admin";
+                  $password= "password";
                   $database ="admin_default";
                   $conn = mysqli_connect($servername, $username , $password, $database);
                   if(!$conn){
@@ -149,34 +149,5 @@
       </center>
     </footer>
   </body>
-
-<!--  <script>
-    window.onload = function () {
-      loaddata();
-    };
-    function loaddata() {
-      var url = "https://spectrumcet.com/speeddett/read_all.php";
-      $.getJSON(url, function (data) {
-        var val = data;
-        var humid =
-          data["weather"][Object.keys(data["weather"]).length - 1]["hum"];
-        var temper =
-          data["weather"][Object.keys(data["weather"]).length - 1]["temp"];
-        document.getElementById("temperature").innerHTML =
-          "<img src = '2.png' height=\"80px\" width=\"80px\" style='border-radius:50%;'/> <br> " +
-          temper +
-          " kmph";
-        document.getElementById("humidity").innerHTML =
-          "<img src = '1.png' height=\"80px\" width=\"80px\" style='border-radius:50%;' /> <br> " +
-          humid;
-        console.log(
-          data["weather"][Object.keys(data["weather"]).length - 1]["temp"]
-        );
-      });
-    }
-    window.setInterval(function () {
-      loaddata();
-    }, 5000);
-  </script> -->
 </html>
 
